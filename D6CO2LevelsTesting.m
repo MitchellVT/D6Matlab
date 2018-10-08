@@ -35,6 +35,8 @@ disp ("Unsorted CO2: ");
 disp (CO2);
 %Now we have Population and CO2 data for our desired countries
 %Population is our Independant variable, so we want to sort its dataset
+%This sorting is temporary, just used to help me decide which dataset works for us
+%We'll remove it for the final script
 %We'll sort it lowest to highest
 %We need to make sure indicies between it and CO2 still match
 
@@ -59,6 +61,9 @@ while (solutionIndex <= length(DATA_ARRAY(1,:)))
     CO2(removeMe) = [];%By the end, CO2 and LOC_POPULATIONS will be empty
     solutionIndex = solutionIndex + 1;
 end
+
+%These lines here are why I sorted, I can easily see who the outliers are
+%and remove them from the dataset. 
 disp ("Sorted Pop: ");
 disp (DATA_ARRAY(1,:));
 disp ("Sorted CO2: ");
