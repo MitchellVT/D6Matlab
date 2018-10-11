@@ -3,10 +3,6 @@
 clear 
 clc
 load('D6ClimateData.mat');
-%COUNTRIES = ["Bahamas", "Cuba", "Barbados", "Dominican Republic", "Jamaica", "Haiti", ...
-    %"Trinidad & Tobago", "Saint Kitts & Nevis", "Antigua & Barbuda", "Grenada"];
-%COUNTRIES = ["United Kingdom", "Australia", "Japan", "Iceland", "New Zealand", "Greenland", "Cuba"];
-%COUNTRIES = ["United States", "China", "Japan", "Germany", "United Kingdom", "France", "India", "Italy", "Brazil", "Canada"];
 COUNTRIES = ["Germany", "United Kingdom", "Italy", "Spain", "Poland", "Sweden", "Norway", "Iceland", "Portugal"];
 LOC_POPULATIONS = [];
 CO2 = [];
