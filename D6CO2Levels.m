@@ -1,5 +1,5 @@
 %Mitchell's initial testing with getting plots of our data
-%This will be population vs. CO2(emissions?) of Caribbean island nations
+%This will be population vs. CO2 of Caribbean island nations
 clear 
 clc
 load('D6ClimateData.mat');
@@ -55,8 +55,8 @@ end
 
 %DataArray R1 is population and R2 is CO2
 plot(DATA_ARRAY(1,:),DATA_ARRAY(2,:))
-xlabel("Gross Domestic Product");
-ylabel("CO2 Emissions");
+xlabel("Population");
+ylabel("CO2 Emissions in millions of metric tons");
 
 fitConstants = polyfit(DATA_ARRAY(1,:), DATA_ARRAY(2,:),1);
 fitYVals = fitConstants(1)*DATA_ARRAY(1,:) + fitConstants(2);
