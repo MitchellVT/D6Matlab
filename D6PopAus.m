@@ -34,5 +34,6 @@ plot(AUS_YEAR, bestFitY);
 xlabel ("Year");
 ylabel("Population of Australia");
 title("Population of Australia vs. Time");
+disp ("Best fit in form y = b*e^(mx)
 b
 m
