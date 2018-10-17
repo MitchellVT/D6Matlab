@@ -4,7 +4,7 @@ clear
 clc
 load('D6ClimateData.mat');
 COUNTRIES = ["Germany", "United Kingdom", "Italy", "Spain", "Poland", "Sweden", "Norway", "Iceland", "Portugal"];
-LOC_POPULATIONS = [];
+LOC_POPULATIONS = []; %LOC Populations
 CO2 = [];
 currentIndex = 1;
 while (currentIndex < length(POPULATION))
