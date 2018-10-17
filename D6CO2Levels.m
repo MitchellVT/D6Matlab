@@ -1,5 +1,5 @@
 %Mitchell's initial testing with getting plots of our data
-%This will be population vs. CO2 of Caribbean island nations
+%This will be population vs. CO2 of Western European Nations
 clear 
 clc
 load('D6ClimateData.mat');
