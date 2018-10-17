@@ -22,5 +22,17 @@ while (COUNTRY_TEXT(currentIndex) == "Australia")
 end
 
 %When in doubt, plot it out
-plot(AUS_YEAR, AUS_GDP); % <-- Thats an exponential curve if I've ever seen one
+semilogy(AUS_YEAR, AUS_GDP); % <-- Thats an exponential curve if I've ever seen one
 
+%Time to plot line of best fit
+fitConstants = polyfit(AUS_YEAR, log(AUS_GDP),1);
+m = fitConstants(1);
+b = exp(fitConstants(2));
+bestFitY = b * exp(m*AUS_YEAR);
+hold on
+plot(AUS_YEAR, bestFitY);
+xlabel ("Year");
+ylabel("Population of Australia");
+title("Population of Australia vs. Time");
+b
+m
